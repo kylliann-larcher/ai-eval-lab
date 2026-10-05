@@ -1,0 +1,372 @@
+{
+  "summary": {
+    "retriever": "chars",
+    "n_questions": 24,
+    "recall@1": 0.8333333333333334,
+    "recall@3": 1.0,
+    "mrr": 0.9166666666666666,
+    "answer_accuracy": 0.5833333333333334
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "question": "Comment calcule-t-on l'accuracy ?",
+      "expected_doc": "accuracy",
+      "retrieved": [
+        "accuracy",
+        "desequilibre",
+        "jeu_de_test"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "L'accuracy est la part des prédictions correctes sur l'ensemble des exemples.",
+      "answer_ok": false
+    },
+    {
+      "id": "q02",
+      "question": "Pourquoi un modèle qui prédit toujours normal peut avoir 99 % d'accuracy ?",
+      "expected_doc": "accuracy",
+      "retrieved": [
+        "accuracy",
+        "desequilibre",
+        "matrice_confusion"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Sur des classes déséquilibrées, elle est trompeuse : avec 1 % d'anomalies, un modèle qui prédit toujours « normal » atteint 99 % d'accuracy sans rien détecter.",
+      "answer_ok": true
+    },
+    {
+      "id": "q03",
+      "question": "Quelle part des alertes du modèle sont justes ?",
+      "expected_doc": "precision",
+      "retrieved": [
+        "precision",
+        "accuracy",
+        "rappel"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "La précision mesure la part des alertes qui sont justes : vrais positifs / (vrais positifs + faux positifs).",
+      "answer_ok": true
+    },
+    {
+      "id": "q04",
+      "question": "Beaucoup de fausses alertes, ça indique quoi ?",
+      "expected_doc": "precision",
+      "retrieved": [
+        "precision",
+        "desequilibre",
+        "seuil"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Une précision faible veut dire beaucoup de fausses alertes.",
+      "answer_ok": true
+    },
+    {
+      "id": "q05",
+      "question": "Comment mesurer la proportion de pannes réellement détectées ?",
+      "expected_doc": "rappel",
+      "retrieved": [
+        "rappel",
+        "jeu_de_test",
+        "validation_croisee"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "C'est la métrique prioritaire quand un cas manqué coûte cher, comme une panne ou une fraude non détectée.",
+      "answer_ok": false
+    },
+    {
+      "id": "q06",
+      "question": "Quelle métrique prioriser quand rater une fraude coûte cher ?",
+      "expected_doc": "rappel",
+      "retrieved": [
+        "rappel",
+        "precision",
+        "matrice_confusion"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "C'est la métrique prioritaire quand un cas manqué coûte cher, comme une panne ou une fraude non détectée.",
+      "answer_ok": false
+    },
+    {
+      "id": "q07",
+      "question": "C'est quoi la sensibilité d'un classifieur ?",
+      "expected_doc": "rappel",
+      "retrieved": [
+        "seuil",
+        "rappel",
+        "desequilibre"
+      ],
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "rr": 0.5,
+      "answer": "Un classifieur produit souvent un score ou une probabilité, transformé en classe avec un seuil, par défaut 0,5.",
+      "answer_ok": false
+    },
+    {
+      "id": "q08",
+      "question": "Quelle est la formule du score F1 ?",
+      "expected_doc": "f1",
+      "retrieved": [
+        "f1",
+        "accuracy",
+        "fuite_donnees"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Le score F1 est la moyenne harmonique de la précision et du rappel : 2 × précision × rappel / (précision + rappel).",
+      "answer_ok": true
+    },
+    {
+      "id": "q09",
+      "question": "Quelle métrique combine précision et rappel en un seul chiffre ?",
+      "expected_doc": "f1",
+      "retrieved": [
+        "f1",
+        "matrice_confusion",
+        "rappel"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Le score F1 est la moyenne harmonique de la précision et du rappel : 2 × précision × rappel / (précision + rappel).",
+      "answer_ok": true
+    },
+    {
+      "id": "q10",
+      "question": "Comment voir où mon classifieur se trompe ?",
+      "expected_doc": "matrice_confusion",
+      "retrieved": [
+        "seuil",
+        "matrice_confusion",
+        "accuracy"
+      ],
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "rr": 0.5,
+      "answer": "Un classifieur produit souvent un score ou une probabilité, transformé en classe avec un seuil, par défaut 0,5.",
+      "answer_ok": false
+    },
+    {
+      "id": "q11",
+      "question": "Comment rendre la classe rare lisible dans un tableau d'erreurs ?",
+      "expected_doc": "matrice_confusion",
+      "retrieved": [
+        "matrice_confusion",
+        "desequilibre",
+        "fuite_donnees"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Normaliser chaque ligne en pourcentage rend la classe rare lisible.",
+      "answer_ok": true
+    },
+    {
+      "id": "q12",
+      "question": "Que faire quand une classe est beaucoup plus rare que l'autre ?",
+      "expected_doc": "desequilibre",
+      "retrieved": [
+        "desequilibre",
+        "precision",
+        "rappel"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "On parle de classes déséquilibrées quand une classe est beaucoup plus rare que l'autre, par exemple 1 anomalie pour 99 points normaux.",
+      "answer_ok": false
+    },
+    {
+      "id": "q13",
+      "question": "Comment gérer 1 anomalie pour 99 points normaux pendant l'entraînement ?",
+      "expected_doc": "desequilibre",
+      "retrieved": [
+        "desequilibre",
+        "fuite_donnees",
+        "accuracy"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "On parle de classes déséquilibrées quand une classe est beaucoup plus rare que l'autre, par exemple 1 anomalie pour 99 points normaux.",
+      "answer_ok": false
+    },
+    {
+      "id": "q14",
+      "question": "Que se passe-t-il si je baisse le seuil à 0,3 ?",
+      "expected_doc": "seuil",
+      "retrieved": [
+        "seuil",
+        "desequilibre",
+        "f1"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Baisser le seuil augmente le rappel et fait baisser la précision ; le monter fait l'inverse.",
+      "answer_ok": true
+    },
+    {
+      "id": "q15",
+      "question": "Comment choisir à partir de quelle probabilité on déclenche une alerte ?",
+      "expected_doc": "seuil",
+      "retrieved": [
+        "precision",
+        "seuil",
+        "jeu_de_test"
+      ],
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "rr": 0.5,
+      "answer": "C'est la métrique à surveiller quand chaque alerte coûte du temps à une équipe.",
+      "answer_ok": true
+    },
+    {
+      "id": "q16",
+      "question": "Pourquoi mon modèle est excellent en test mais nul en production ?",
+      "expected_doc": "fuite_donnees",
+      "retrieved": [
+        "fuite_donnees",
+        "jeu_de_test",
+        "validation_croisee"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Les scores deviennent excellents en test puis s'effondrent en production.",
+      "answer_ok": false
+    },
+    {
+      "id": "q17",
+      "question": "Est-ce grave de normaliser avant de séparer train et test ?",
+      "expected_doc": "fuite_donnees",
+      "retrieved": [
+        "fuite_donnees",
+        "jeu_de_test",
+        "matrice_confusion"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Exemple classique : normaliser les données avant de séparer entraînement et test.",
+      "answer_ok": true
+    },
+    {
+      "id": "q18",
+      "question": "Combien de questions faut-il pour évaluer une application LLM ?",
+      "expected_doc": "jeu_de_test",
+      "retrieved": [
+        "jeu_de_test",
+        "validation_croisee",
+        "desequilibre"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Pour une application LLM, 30 à 50 questions réelles suffisent pour commencer.",
+      "answer_ok": true
+    },
+    {
+      "id": "q19",
+      "question": "Quand faut-il relancer l'évaluation de mon chatbot ?",
+      "expected_doc": "jeu_de_test",
+      "retrieved": [
+        "validation_croisee",
+        "jeu_de_test",
+        "desequilibre"
+      ],
+      "recall@1": 0.0,
+      "recall@3": 1.0,
+      "rr": 0.5,
+      "answer": "On entraîne k fois le modèle en gardant à chaque fois un bloc différent pour l'évaluation, puis on fait la moyenne des scores.",
+      "answer_ok": false
+    },
+    {
+      "id": "q20",
+      "question": "Comment savoir si le moteur de recherche de mon RAG retrouve le bon document ?",
+      "expected_doc": "recall_at_k",
+      "retrieved": [
+        "recall_at_k",
+        "fuite_donnees",
+        "rappel"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Dans un système RAG, le recall@k vaut 1 si le bon document figure parmi les k premiers résultats du moteur de recherche, 0 sinon, moyenné sur toutes les questions.",
+      "answer_ok": true
+    },
+    {
+      "id": "q21",
+      "question": "Que vaut le MRR si le bon document arrive en deuxième position ?",
+      "expected_doc": "recall_at_k",
+      "retrieved": [
+        "recall_at_k",
+        "rappel",
+        "precision"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Le MRR (mean reciprocal rank) tient compte du rang : 1 si le bon document arrive premier, 1/2 s'il arrive deuxième, et ainsi de suite.",
+      "answer_ok": true
+    },
+    {
+      "id": "q22",
+      "question": "Peut-on faire confiance à GPT ou Claude pour noter des réponses ?",
+      "expected_doc": "llm_juge",
+      "retrieved": [
+        "llm_juge",
+        "jeu_de_test",
+        "matrice_confusion"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Avant de leur faire confiance, on mesure leur accord avec des annotations humaines sur un échantillon.",
+      "answer_ok": true
+    },
+    {
+      "id": "q23",
+      "question": "Quels biais a un modèle quand il évalue d'autres réponses ?",
+      "expected_doc": "llm_juge",
+      "retrieved": [
+        "llm_juge",
+        "desequilibre",
+        "rappel"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Ces juges ont des biais connus : ils favorisent souvent les réponses longues, la première réponse présentée, ou les réponses produites par leur propre famille de modèles.",
+      "answer_ok": true
+    },
+    {
+      "id": "q24",
+      "question": "Comment obtenir une estimation stable sur un petit jeu de données ?",
+      "expected_doc": "validation_croisee",
+      "retrieved": [
+        "validation_croisee",
+        "fuite_donnees",
+        "jeu_de_test"
+      ],
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "rr": 1.0,
+      "answer": "Elle donne une estimation plus stable qu'un seul découpage, surtout sur un petit jeu de données.",
+      "answer_ok": false
+    }
+  ]
+}

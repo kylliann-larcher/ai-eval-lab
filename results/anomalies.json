@@ -1,0 +1,55 @@
+{
+  "toujours_normal": {
+    "accuracy": 0.99,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        5940,
+        0
+      ],
+      [
+        60,
+        0
+      ]
+    ]
+  },
+  "isolation_forest": {
+    "accuracy": 0.9801666666666666,
+    "precision": 0.05970149253731343,
+    "recall": 0.06666666666666667,
+    "f1": 0.06299212598425197,
+    "confusion_matrix": [
+      [
+        5877,
+        63
+      ],
+      [
+        56,
+        4
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "accuracy": 0.9956666666666667,
+    "precision": 0.7575757575757576,
+    "recall": 0.8333333333333334,
+    "f1": 0.7936507936507936,
+    "confusion_matrix": [
+      [
+        5924,
+        16
+      ],
+      [
+        10,
+        50
+      ]
+    ]
+  },
+  "_meta": {
+    "n_test": 6000,
+    "n_anomalies_test": 60,
+    "seed": 42
+  }
+}
