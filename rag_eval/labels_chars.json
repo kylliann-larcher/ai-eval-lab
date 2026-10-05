@@ -1,0 +1,7 @@
+{
+  "_note": "Annotations manuelles des réponses du run --retriever chars : la phrase renvoyée répond-elle vraiment à la question ? À relire et corriger.",
+  "q01": false, "q02": true, "q03": true, "q04": true, "q05": false, "q06": false,
+  "q07": false, "q08": true, "q09": true, "q10": false, "q11": true, "q12": false,
+  "q13": false, "q14": true, "q15": false, "q16": false, "q17": false, "q18": true,
+  "q19": false, "q20": true, "q21": true, "q22": true, "q23": true, "q24": false
+}

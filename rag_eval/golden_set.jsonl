@@ -1,0 +1,24 @@
+{"id": "q01", "question": "Comment calcule-t-on l'accuracy ?", "doc": "accuracy", "keywords": ["total"]}
+{"id": "q02", "question": "Pourquoi un modèle qui prédit toujours normal peut avoir 99 % d'accuracy ?", "doc": "accuracy", "keywords": ["99 %"]}
+{"id": "q03", "question": "Quelle part des alertes du modèle sont justes ?", "doc": "precision", "keywords": ["faux positifs"]}
+{"id": "q04", "question": "Beaucoup de fausses alertes, ça indique quoi ?", "doc": "precision", "keywords": ["précision faible"]}
+{"id": "q05", "question": "Comment mesurer la proportion de pannes réellement détectées ?", "doc": "rappel", "keywords": ["faux négatifs"]}
+{"id": "q06", "question": "Quelle métrique prioriser quand rater une fraude coûte cher ?", "doc": "rappel", "keywords": ["rappel"]}
+{"id": "q07", "question": "C'est quoi la sensibilité d'un classifieur ?", "doc": "rappel", "keywords": ["vrais positifs"]}
+{"id": "q08", "question": "Quelle est la formule du score F1 ?", "doc": "f1", "keywords": ["moyenne harmonique"]}
+{"id": "q09", "question": "Quelle métrique combine précision et rappel en un seul chiffre ?", "doc": "f1", "keywords": ["f1"]}
+{"id": "q10", "question": "Comment voir où mon classifieur se trompe ?", "doc": "matrice_confusion", "keywords": ["matrice de confusion"]}
+{"id": "q11", "question": "Comment rendre la classe rare lisible dans un tableau d'erreurs ?", "doc": "matrice_confusion", "keywords": ["pourcentage"]}
+{"id": "q12", "question": "Que faire quand une classe est beaucoup plus rare que l'autre ?", "doc": "desequilibre", "keywords": ["class_weight"]}
+{"id": "q13", "question": "Comment gérer 1 anomalie pour 99 points normaux pendant l'entraînement ?", "doc": "desequilibre", "keywords": ["pondérer"]}
+{"id": "q14", "question": "Que se passe-t-il si je baisse le seuil à 0,3 ?", "doc": "seuil", "keywords": ["rappel"]}
+{"id": "q15", "question": "Comment choisir à partir de quelle probabilité on déclenche une alerte ?", "doc": "seuil", "keywords": ["coût"]}
+{"id": "q16", "question": "Pourquoi mon modèle est excellent en test mais nul en production ?", "doc": "fuite_donnees", "keywords": ["fuite"]}
+{"id": "q17", "question": "Est-ce grave de normaliser avant de séparer train et test ?", "doc": "fuite_donnees", "keywords": ["normaliser"]}
+{"id": "q18", "question": "Combien de questions faut-il pour évaluer une application LLM ?", "doc": "jeu_de_test", "keywords": ["30 à 50"]}
+{"id": "q19", "question": "Quand faut-il relancer l'évaluation de mon chatbot ?", "doc": "jeu_de_test", "keywords": ["changement"]}
+{"id": "q20", "question": "Comment savoir si le moteur de recherche de mon RAG retrouve le bon document ?", "doc": "recall_at_k", "keywords": ["recall@k"]}
+{"id": "q21", "question": "Que vaut le MRR si le bon document arrive en deuxième position ?", "doc": "recall_at_k", "keywords": ["1/2"]}
+{"id": "q22", "question": "Peut-on faire confiance à GPT ou Claude pour noter des réponses ?", "doc": "llm_juge", "keywords": ["annotations humaines"]}
+{"id": "q23", "question": "Quels biais a un modèle quand il évalue d'autres réponses ?", "doc": "llm_juge", "keywords": ["longues"]}
+{"id": "q24", "question": "Comment obtenir une estimation stable sur un petit jeu de données ?", "doc": "validation_croisee", "keywords": ["validation croisée"]}
